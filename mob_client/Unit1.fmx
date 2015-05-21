@@ -1,0 +1,117 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 775
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 480
+  DesignerHeight = 800
+  DesignerDeviceName = '5.1 WVGA Android Phone'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object srvaddr: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Text = '46.48.24.146'
+    Position.X = 168.000000000000000000
+    Position.Y = 16.000000000000000000
+    Width = 145.000000000000000000
+    Height = 32.000000000000000000
+  end
+  object log: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Height = 225.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 248.000000000000000000
+    TabOrder = 4
+    Width = 289.000000000000000000
+    ReadOnly = True
+  end
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 5
+    Text = #1055#1086#1076#1082#1083#1102#1095#1080#1090#1100#1089#1103
+    Width = 145.000000000000000000
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Height = 23.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = #1040#1076#1088#1077#1089' '#1089#1077#1088#1074#1077#1088#1072
+    Width = 145.000000000000000000
+  end
+  object Button2: TButton
+    Height = 44.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 10
+    Text = #1042#1082#1083#1102#1095#1080#1090#1100' '#1089#1080#1089#1090#1077#1084#1091
+    Visible = False
+    Width = 289.000000000000000000
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Height = 44.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 11
+    Text = #1042#1099#1082#1083#1102#1095#1080#1090#1100' '#1089#1080#1089#1090#1077#1084#1091
+    Visible = False
+    Width = 289.000000000000000000
+    OnClick = Button3Click
+  end
+  object RadioButton1: TRadioButton
+    Height = 23.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 12
+    Text = #1042#1089#1090#1088#1086#1077#1085#1085#1072#1103' '#1087#1088#1086#1075#1088#1072#1084#1084#1072
+    Visible = False
+    Width = 209.000000000000000000
+    OnChange = RadioButton1Change
+  end
+  object RadioButton2: TRadioButton
+    Height = 23.000000000000000000
+    Position.X = 25.000000000000000000
+    Position.Y = 208.000000000000000000
+    TabOrder = 13
+    Text = #1056#1091#1095#1085#1086#1081' '#1074#1074#1086#1076
+    Visible = False
+    Width = 128.000000000000000000
+    OnChange = RadioButton2Change
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Position.X = 160.000000000000000000
+    Position.Y = 200.000000000000000000
+    Width = 65.000000000000000000
+    Height = 32.000000000000000000
+    Visible = False
+  end
+  object Button4: TButton
+    Height = 57.000000000000000000
+    Position.X = 240.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 15
+    Text = #1047#1072#1087#1091#1089#1082
+    Visible = False
+    Width = 73.000000000000000000
+    OnClick = Button4Click
+  end
+  object client: TIdTCPClient
+    ConnectTimeout = 0
+    IPVersion = Id_IPv4
+    Port = 25500
+    ReadTimeout = -1
+    Left = 24
+    Top = 64
+  end
+end
